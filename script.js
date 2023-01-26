@@ -1,25 +1,31 @@
-let pessoa = {
-    nome: 'Guilherme',
-    sobrenome: 'Padial',
-    empresa: 'Sujeito Programador',
-    cargo: 'Programador FullStack'
+// let primeiros = [1, 2, 3]
+// let numeros = [...primeiros, 4, 5, 6]
+
+// console.log(numeros)
+
+// let pessoa = {
+//     nome: 'Guilherme',
+//     idade: 19,
+// }
+
+// let situacao = {
+//     ...pessoa,
+//     status: 'Ativo',
+//     cargo: 'Developer Javascript'
+// }
+
+// console.log(situacao)
+
+
+function novoUsuario(info){
+    console.log(info)
+    let data = {
+        ...info,
+        status: "Ativo",
+        admissao: "19/02/2023",
+        codigo: "154756"
+    }
+    console.log(data)
 }
 
-// console.log(pessoa.nome)
-// console.log(pessoa.cargo)
-
-// nome = 'teste'
-
-// const {nome: nomePessoa, cargo} = pessoa
-
-// console.log(nomePessoa)
-// console.log(cargo)
-
-let nomes = ['Guilherme', 'Rafael', 'Lorena']
-// let {0: Guilherme, 1: Rafa} = nomes
-// console.log(Rafa)
-
-let [primeiro, segundo, terceiro] = nomes
-console.log(primeiro)
-console.log(segundo)
-console.log(terceiro)
+novoUsuario({nome: "Guilherme", sobrenome: "Padial", cargo: "Desenvolvedor Javascript"})
