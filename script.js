@@ -1,6 +1,8 @@
-let nome = "Guilherme Padial"
-let idade = 19
+let pessoa = {
+    nome: 'Guilherme',
+    sobrenome: 'Padial',
+    empresa: 'Sujeito Programador',
+    cargo: 'Programador FullStack'
+}
 
-let mensagem = `Meu nome é ${nome} e eu tenho ${idade}`
-
-console.log(mensagem)
+console.log(pessoa)
