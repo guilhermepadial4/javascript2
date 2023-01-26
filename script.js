@@ -1,31 +1,16 @@
-// let primeiros = [1, 2, 3]
-// let numeros = [...primeiros, 4, 5, 6]
 
-// console.log(numeros)
-
-// let pessoa = {
-//     nome: 'Guilherme',
-//     idade: 19,
+// function convidados(...nomes){
+//     console.log("SEJAM TODOS BEM-VINDOS")
+//     console.log(nomes)
 // }
 
-// let situacao = {
-//     ...pessoa,
-//     status: 'Ativo',
-//     cargo: 'Developer Javascript'
-// }
+// convidados("Guilherme", "Rafael", "Lorena")
 
-// console.log(situacao)
+function gerador(...numeros){
+    console.log(numeros)
 
-
-function novoUsuario(info){
-    console.log(info)
-    let data = {
-        ...info,
-        status: "Ativo",
-        admissao: "19/02/2023",
-        codigo: "154756"
-    }
-    console.log(data)
+    const numeroGerado = Math.floor(Math.random() * numeros.length)
+    console.log("O numero gerado foi: " + numeros[numeroGerado])
 }
 
-novoUsuario({nome: "Guilherme", sobrenome: "Padial", cargo: "Desenvolvedor Javascript"})
+gerador(1, 5, 86, 30, 22, 54, 9)
