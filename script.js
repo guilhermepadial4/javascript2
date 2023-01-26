@@ -5,4 +5,4 @@ let pessoa = {
     cargo: 'Programador FullStack'
 }
 
-console.log(pessoa)
+console.log(pessoa.nome)
