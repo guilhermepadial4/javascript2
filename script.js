@@ -1,16 +1,16 @@
 
-// function convidados(...nomes){
-//     console.log("SEJAM TODOS BEM-VINDOS")
-//     console.log(nomes)
-// }
+// let lista = ['Guiherme', 'Rafael', 'Lorena']
 
-// convidados("Guilherme", "Rafael", "Lorena")
+// lista.map((item, index)=>{
+//     console.log(`PASSANDO: ${item} - Está na posição: ${index}`)
+// })
 
-function gerador(...numeros){
-    console.log(numeros)
+let numeros = [1, 2, 3]
+let total = numeros.reduce((acumulador, numeros, indice, original,)=>{
+    console.log(`${acumulador} - total até o momento`)
+    console.log(`${numeros} - valor atual`)
+    console.log(`${indice} - indice atual`)
+    console.log(`${original} - array original`)
 
-    const numeroGerado = Math.floor(Math.random() * numeros.length)
-    console.log("O numero gerado foi: " + numeros[numeroGerado])
-}
-
-gerador(1, 5, 86, 30, 22, 54, 9)
+    return acumulador += numeros
+})
