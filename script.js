@@ -1,18 +1,14 @@
 
-// let listagem = [5, 3, 'Guilherme', 2]
-// let busca = listagem.find((item)=>{
-//     if(item === 'Guilherme'){
-//         console.log('Item encontrado')
-//     }
-// })
+// function somar(a, b){
+//     let total = a + b
+//     console.log(total)
+// }
 
-// console.log(busca)
+// somar(10, 5)
 
+let subtrair = (valor1, valor2) => {
+    let total = valor1 - valor2
+    console.log(total)
+}
 
-let nomes = ['Jose', 'Lucimeire', 'Bianca', 'Guilherme', 'Rafael', 'Lorena']
-
-let filtro = nomes.filter((item)=>{
-    return item.length <= 6
-})
-
-console.log(filtro)
+subtrair(10, 5)
