@@ -1,14 +1,12 @@
 
-// function somar(a, b){
-//     let total = a + b
-//     console.log(total)
+// let nomes = ['Guilherme', 'Rafael', 'Lorena']
+// console.log(nomes.includes('Bianca'))
+
+// if(nomes.includes("Rafael")){
+//     console.log("Está na lista")
+// }else{
+//     console.log("Não está na lista")
 // }
 
-// somar(10, 5)
-
-let subtrair = (valor1, valor2) => {
-    let total = valor1 - valor2
-    console.log(total)
-}
-
-subtrair(10, 5)
+let nome = 'Guilherme'
+console.log(nome.endsWith('r'))
