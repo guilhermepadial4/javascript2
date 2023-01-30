@@ -1,20 +1,18 @@
 
-// let lista = ['Guiherme', 'Rafael', 'Lorena']
-
-// lista.map((item, index)=>{
-//     console.log(`PASSANDO: ${item} - Está na posição: ${index}`)
+// let listagem = [5, 3, 'Guilherme', 2]
+// let busca = listagem.find((item)=>{
+//     if(item === 'Guilherme'){
+//         console.log('Item encontrado')
+//     }
 // })
 
-let numeros = [1, 2, 3, 10]
-let total = numeros.reduce((acumulador, numeros, indice, original,)=>{
-    console.log(`${acumulador} - total até o momento`)
-    console.log(`${numeros} - valor atual`)
-    //console.log(`${indice} - indice atual`)
-    //console.log(`${original} - array original`)
-    console.log("-----------------------")
+// console.log(busca)
 
-    return acumulador += numeros
+
+let nomes = ['Jose', 'Lucimeire', 'Bianca', 'Guilherme', 'Rafael', 'Lorena']
+
+let filtro = nomes.filter((item)=>{
+    return item.length <= 6
 })
 
-
-console.log("Total do REDUCE: " + total)
+console.log(filtro)
